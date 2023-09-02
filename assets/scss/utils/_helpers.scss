@@ -6,7 +6,7 @@
      text-decoration: none;
     }
     .flex{
-        display: flex;    
+        display: flex;   
     }
     .flex-wrap{
         flex-wrap: wrap;
@@ -17,11 +17,18 @@
     li:hover{
     opacity: 0.8;
     }
-
+    .white-space-nowrap{
+        white-space: nowrap;
+    }
     .white-bg{
     background-color: #fff;
     }
-    
+    .overflow-x-hidden{
+        overflow-x: hidden;
+    }
+    .w-100{
+        width: 100%;
+    }
     /* 全域 border box */
     
     *,*::before,*::after{
@@ -153,6 +160,9 @@
         .col-md-6{
             width: 50%;
         }
+        .col-md-7{
+            width: 58.33%;
+        }
         .col-md-12{
         width: 100%;
         }
@@ -161,6 +171,9 @@
         }
         .md-flex-wrap{
         flex-wrap: wrap;
+        }
+        .md-flex{
+            display: flex;
         }
     }
 

@@ -1,6 +1,7 @@
-.select{
-    width: 304px;
+select{
+    min-width:155px;
 }
+
 .select-color{
     color: #495057;
 }
@@ -18,6 +19,9 @@
     height: 224px;
     width: 100%;
     overflow: hidden;
+    @media(max-width:768px) {
+        height: 100%;
+    }
 }
 .store-Map{
     max-width: 746px;

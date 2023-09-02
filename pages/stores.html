@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title data-aos="fade-right">門市據點</title>
 </head>
-  <body>
+  <body class="overflow-x-hidden">
     <%- include('./layout/header'); -%>
-    <div data-aos="fade-right" class="container store-mb">
+    <div data-aos="fade-right" class="container store-mb overflow-x-hidden">
         <h1 class="fz-48 fw-bold border-left pl-16 store-title">門市據點</h1>
-        <div class="col-sm-12 select flex mb-40 sm-mb-24">
-            <p class="fz-24 mr-16">選擇分店</p>
-            <select class="fz-18 select-color">
+        <div class="col-4 col-md-7 col-sm-12 flex mb-40 sm-mb-24">
+            <p class="fz-24 mr-16 white-space-nowrap">選擇分店</p>
+            <select class="fz-18 select-color w-100">
                 <option>台北中山旗艦店</option>
                 <option>台北中山旗艦店</option>
                 <option>台北中山旗艦店</option>
@@ -26,7 +26,7 @@
             </select>
         </div>
         <div data-aos="fade-right" class="row sm-remove-row flex-wrap">
-            <div class="col-5 col-md-12 col-sm-12 px-3 sm-flex-wrap md-px-0 md-row md-mb-24">
+            <div class="col-5 col-md-12 col-sm-12 px-3 sm-flex-wrap md-px-0 md-mb-24 md-flex">
                 <div class="col-md-6 col-sm-12 md-px-3">
                     <img class="store-Img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="">
                 </div>
@@ -39,9 +39,18 @@
                         <li class="pb-8"><span class="material-symbols-outlined">
                             schedule
                             </span><span class="pl-8">營業時間：10:00-21:00</span></li>
-                        <li><span class="material-symbols-outlined">
+                        <!-- <li><span class="material-symbols-outlined">
                             location_on
-                            </span><span class="pl-8">地址：台北市中山區南京東路25巷2-1號</span></li>
+                            </span><span class="pl-8">地址：台北市中山區南京東路25巷2-1號</span></li> -->
+                        <li class="flex"><div class="material-symbols-outlined">
+                            location_on
+                            </div>
+                            <div>
+                                <div class="flex">
+                                    <div class="pl-8 white-space-nowrap">地址：</div><div>台北市中山區南京東路25巷2-1號</div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -50,12 +59,10 @@
     </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
-    <!-- <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
-    <script src="../node_modules/aos/dist/aos.js"></script> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+    </script> -->
   </body>
 </html>
